@@ -25,7 +25,7 @@ router = APIRouter(
 
 
 @router.post(
-    "/",
+    "",
     response_model=BookResponse,
     status_code=status.HTTP_201_CREATED
 )
@@ -46,7 +46,7 @@ def create_book(
         )
 
 @router.get(
-    "/",
+    "",
     response_model=list[BookResponse]
 )
 def get_books(
